@@ -1,0 +1,5 @@
+student = {"name": "DEV", "age": 18, "course": "AI"}
+print(student["name"])
+student["age"] = 25           # update
+student["grade"] = "A"        # add new
+print(student)
