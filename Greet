@@ -1,0 +1,9 @@
+name = input("Name: ")
+hour = int(input("Hour (0-23): "))
+if hour < 12:
+    greet = "Good morning"
+elif hour <= 17:
+    greet = "Good afternoon"
+else:
+    greet = "Good evening"
+print(f"{greet}, {name}!")
