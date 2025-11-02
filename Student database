@@ -1,0 +1,11 @@
+students = []
+
+for i in range(5):
+    name = input("Enter student name: ")
+    age = int(input("Enter student age: "))
+    student = {"name": name, "age": age}
+    students.append(student)
+
+print("\nStudent list:")
+for s in students:
+    print(s)
