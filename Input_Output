@@ -1,0 +1,3 @@
+name = input("Enter your name: ")   # waits for user input
+age = int(input("Enter your age: "))# convert to int
+print("Hello", name, "— you are", age, "years old.")
