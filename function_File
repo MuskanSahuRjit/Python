@@ -45,3 +45,37 @@ with open("data.txt", "r") as f:
 with open("data.txt", "r") as f:
     for line in f:
         print(line.strip())
+
+def square(n):
+    return n ** 2
+
+# test it
+num = int(input("Enter a number: "))
+print("Square is:", square(num))
+
+
+def is_even(n):
+    return n % 2 == 0   # True if divisible by 2
+
+# test
+num = int(input("Enter a number: "))
+if is_even(num):
+    print(num, "is even")
+else:
+    print(num, "is odd")
+
+
+# Step 1: write numbers to file
+with open("numbers.txt", "w") as f:
+    for i in range(5):
+        num = int(input(f"Enter number {i+1}: "))
+        f.write(str(num) + "\n")  # each number on new line
+
+# Step 2: read and calculate total
+total = 0
+with open("numbers.txt", "r") as f:
+    for line in f:
+        total += int(line.strip())
+
+print("Total sum of numbers =", total)
+
