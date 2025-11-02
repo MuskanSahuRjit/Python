@@ -1,0 +1,47 @@
+def greet(name):
+    print("Hello,", name)
+
+greet("Muskan")
+
+def add(a, b):
+    return a + b
+
+result = add(5, 7)
+print("Sum =", result)
+
+def divide(a, b):
+    if b == 0:
+        return None, "Division by zero!"
+    return a / b, None
+
+value, error = divide(10, 0)
+print(value, error)
+
+def divide(a, b):
+    if b == 0:
+        return None, "Division by zero!"
+    return a / b, None
+
+value, error = divide(11, 5)
+print(value, error)
+
+
+def demo():
+    x = 10
+    print("Inside:", x)
+
+demo()
+
+
+with open("data.txt", "w") as f:
+    f.write("Hello world!\n")
+    f.write("Python makes file handling easy.\n")
+
+with open("data.txt", "r") as f:
+    content = f.read()
+    print(content)
+
+
+with open("data.txt", "r") as f:
+    for line in f:
+        print(line.strip())
