@@ -1,0 +1,81 @@
+import math
+
+print(math.sqrt(25))   # square root
+print(math.pi)         # constant π
+print(math.pow(2, 3))  # power 2³
+
+
+from math import sqrt, pi
+print(sqrt(49))
+print(pi)
+
+# numpy
+import numpy as np
+
+# Create arrays
+a = np.array([1, 2, 3, 4, 5])
+print("Array:", a)
+
+# Basic operations
+print("Mean:", np.mean(a))
+print("Sum:", np.sum(a))
+print("Squares:", a ** 2)
+
+# 2-D array (matrix)
+b = np.array([[1, 2], [3, 4]])
+print("Matrix:\n", b)
+print("Transpose:\n", b.T)
+
+# pandas
+
+import pandas as pd
+
+# Create data
+data = {
+    "Name": ["Asha", "Ravi", "Kiran"],
+    "Age": [25, 30, 22],
+    "City": ["Delhi", "Mumbai", "Pune"]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+# Access columns
+print(df["Name"])
+
+# Filter
+print(df[df["Age"] > 24])
+
+# Add a new column
+df["Score"] = [85, 90, 78]
+print(df)
+
+df.to_csv("people.csv", index=False)        # save to file
+df2 = pd.read_csv("people.csv")             # read it back
+print(df2)
+
+
+import math   # import the math module
+
+# factorial of 6
+fact = math.factorial(6)
+print("Factorial of 6 =", fact)
+
+# sine of 90 degrees
+angle_deg = 90
+angle_rad = math.radians(angle_deg)   # convert degrees to radians
+sin_value = math.sin(angle_rad)
+print("Sine of 90 degrees =", sin_value)
+
+
+import numpy as np
+
+# create array of numbers 1 to 10
+arr = np.arange(1, 11)   # 1 through 10
+print("Array:", arr)
+
+# calculations
+print("Mean =", np.mean(arr))
+print("Median =", np.median(arr))
+print("Standard deviation =", np.std(arr))
+
