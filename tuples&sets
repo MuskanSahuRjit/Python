@@ -1,0 +1,7 @@
+coords = (3, 4)
+print(coords[0])
+
+
+fruits = {"apple", "banana", "apple"}
+print(fruits)   # duplicates removed
+fruits.add("orange")
